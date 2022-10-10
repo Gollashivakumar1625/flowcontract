@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0 <0.9.0;
+
+contract flowcontrol {
+    function whichmonth(uint256 _month) public pure returns(string memory){
+        if(_month == 1){
+            return "January";
+        }else if(_month == 2){
+            return "February";
+        }else if(_month == 3){
+            return "march";
+        }else if(_month == 4){
+            return "April";
+        }else if(_month == 5){
+            return "may";
+        }else if(_month == 6){
+            return "june";
+        }else if(_month == 7){
+            return "july";
+        }
+        return "only 12 months";
+    }
+}
